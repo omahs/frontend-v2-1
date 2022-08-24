@@ -7,7 +7,7 @@ env:
   VUE_APP_FATHOM_SITE_ID: xxx
   VUE_APP_GA_ID: xxx
 
-# jobs:
+jobs:
 #   Version:
 #     runs-on: ubuntu-latest
 #     steps:
