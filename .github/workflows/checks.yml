@@ -1,11 +1,11 @@
-# name: Checks
+name: Checks
 
-# on:
-#   - pull_request
+on:
+  - pull_request
 
-# env:
-#   VUE_APP_FATHOM_SITE_ID: xxx
-#   VUE_APP_GA_ID: xxx
+env:
+  VUE_APP_FATHOM_SITE_ID: xxx
+  VUE_APP_GA_ID: xxx
 
 # jobs:
 #   Version:
