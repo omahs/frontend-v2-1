@@ -1283,5 +1283,9 @@
       "tvl": "TVL",
       "volume": "Volume"
     }
+  },
+  "inputLabels": {
+    "tokenOut": "Token out",
+    "tokenIn": "Token in"
   }
 }
