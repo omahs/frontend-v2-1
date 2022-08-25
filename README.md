@@ -92,6 +92,10 @@ Click the button below to deploy the frontend Docker image to a new instance in 
 
 [![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/balancer-labs/frontend-v2/tree/UI-769-one-click-deploy-to-digital-ocean)
 
+### E2e Testing
+
+E2e tests are pulled from another repo to run them in the pipeline: [frontend-e2e](https://github.com/balancer-labs/frontend-e2e)
+
 ## Design System
 
 The app is using [Tailwind](https://tailwindcss.com/) to configure base styles. In development these styles can be viewed by running:
