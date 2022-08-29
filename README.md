@@ -94,7 +94,7 @@ Click the button below to deploy the frontend Docker image to a new instance in 
 
 ### E2e Testing
 
-E2e tests are pulled from another repo to run them in the pipeline: [frontend-e2e](https://github.com/balancer-labs/frontend-e2e)
+E2e tests are pulled from [frontend-e2e](https://github.com/balancer-labs/frontend-e2e) repository.
 
 ## Design System
 
