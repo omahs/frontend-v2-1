@@ -92,9 +92,9 @@ Click the button below to deploy the frontend Docker image to a new instance in 
 
 [![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/balancer-labs/frontend-v2/tree/UI-769-one-click-deploy-to-digital-ocean)
 
-### E2e Testing
+### E2E Testing
 
-E2e tests are pulled from [frontend-e2e](https://github.com/balancer-labs/frontend-e2e) repository.
+E2E tests are pulled from [frontend-e2e](https://github.com/balancer-labs/frontend-e2e) repository.
 
 ## Design System
 
