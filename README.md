@@ -96,6 +96,8 @@ Click the button below to deploy the frontend Docker image to a new instance in 
 
 E2E tests are pulled from [frontend-e2e](https://github.com/balancer-labs/frontend-e2e) repository.
 
+[Adding new tests and fixing tests](https://github.com/balancer-labs/frontend-e2e#adding-new-tests-and-fixing-tests)
+
 ## Design System
 
 The app is using [Tailwind](https://tailwindcss.com/) to configure base styles. In development these styles can be viewed by running:
