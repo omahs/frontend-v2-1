@@ -24,6 +24,11 @@ import translations from '@/locales/default.json';
 import BalStack from '@/components/_global/BalStack/BalStack.vue';
 import SpinnerIcon from '@/components/_global/icons/SpinnerIcon.vue';
 // import BalActionSteps from '@/components/_global/BalActionSteps/BalActionSteps.vue';
+import BalCheckbox from '@/components/_global/BalCheckbox/BalCheckbox.vue';
+import BalProgressBar from '@/components/_global/BalProgressBar/BalProgressBar.vue';
+import BalRangeInput from '@/components/_global/BalRangeInput/BalRangeInput.vue';
+import BalTextInput from '@/components/_global/BalTextInput/BalTextInput.vue';
+import BalDropdown from '@/components/_global/BalDropdown/BalDropdown.vue';
 
 const i18n = createI18n({
   locale: 'en-US',
@@ -71,6 +76,11 @@ config.global.components = {
   StarsIcon,
   // BalHorizSteps,
   // BalActionSteps,
+  BalCheckbox,
+  BalProgressBar,
+  BalRangeInput,
+  BalTextInput,
+  BalDropdown,
   BalStack,
   SpinnerIcon,
 };
