@@ -3,7 +3,9 @@
 // but before the test code itself.
 import registerRequireContextHook from 'babel-plugin-require-context-hook/register';
 import { server } from '@/tests/msw/server';
+import fetch from 'cross-fetch';
 
+global.fetch = fetch;
 registerRequireContextHook();
 
 // MSW SETUP
