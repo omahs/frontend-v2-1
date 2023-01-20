@@ -11,7 +11,7 @@ import { oneMinInMs } from '@/composables/useTime';
  * STATE
  */
 const { pool, poolQuery } = usePoolTransfers();
-const { isDeepPool } = usePool(pool);
+const { isDeepPool, isWeightedLikePool } = usePool(pool);
 
 const { activeTab } = useInvestPageTabs();
 
@@ -24,7 +24,7 @@ useIntervalFn(poolQuery.refetch.value, oneMinInMs);
 
 <template>
   <JoinPoolProvider
-    v-if="pool && isDeepPool"
+    v-if="pool && (isWeightedLikePool || isDeepPool)"
     :pool="pool"
     :isSingleAssetJoin="activeTab === Tab.SingleToken"
   >

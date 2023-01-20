@@ -1,4 +1,4 @@
-import { isDeep } from '@/composables/usePool';
+import { isDeep, isWeighted, isWeightedLike } from '@/composables/usePool';
 import { balancer } from '@/lib/balancer.sdk';
 import { gasPriceService } from '@/services/gas-price/gas-price.service';
 import { Pool } from '@/services/pool/types';
@@ -47,7 +47,7 @@ export class JoinPoolService {
 
     if (swapJoin) {
       return (this.joinHandler = new SwapJoinHandler(pool, sdk, gasPriceServ));
-    } else if (isDeep(pool.value)) {
+    } else if (isDeep(pool.value) || isWeightedLike(pool.value.poolType)) {
       return (this.joinHandler = new GeneralisedJoinHandler(
         pool,
         sdk,
