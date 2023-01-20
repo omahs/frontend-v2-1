@@ -30,6 +30,8 @@ import BalRangeInput from '@/components/_global/BalRangeInput/BalRangeInput.vue'
 import BalTextInput from '@/components/_global/BalTextInput/BalTextInput.vue';
 import BalDropdown from '@/components/_global/BalDropdown/BalDropdown.vue';
 import BalLoadingNumber from '@/components/_global/BalLoadingNumber/BalLoadingNumber.vue';
+import BalDataListRow from '@/components/_global/BalDataList/BalDataListRow.vue';
+import BalDataList from '@/components/_global/BalDataList/BalDataList.vue';
 
 const i18n = createI18n({
   locale: 'en-US',
@@ -77,6 +79,8 @@ config.global.components = {
   StarsIcon,
   // BalHorizSteps,
   // BalActionSteps,
+  BalDataListRow,
+  BalDataList,
   BalLoadingNumber,
   BalCheckbox,
   BalProgressBar,
