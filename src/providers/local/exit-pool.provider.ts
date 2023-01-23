@@ -363,6 +363,7 @@ const provider = (props: Props) => {
         valid: true,
       }));
     } catch (error) {
+      console.error(error);
       captureException(error);
       throw new Error('Failed to construct exit.', { cause: error });
     }
@@ -400,6 +401,7 @@ const provider = (props: Props) => {
       singleAmountOut.max =
         selectByAddress(output.amountsOut, singleAmountOut.address) || '0';
     } catch (error) {
+      console.error(error);
       captureException(error);
       throw new Error('Failed to calculate max.', { cause: error });
     }

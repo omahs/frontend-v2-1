@@ -22,7 +22,7 @@ import { hasFetchedPoolsForSor } from '@/lib/balancer.sdk';
  */
 const { network } = configService;
 const { pool, poolQuery, loadingPool, transfersAllowed } = usePoolTransfers();
-const { isDeepPool } = usePool(pool);
+const { isDeepPool, isWeightedLikePool } = usePool(pool);
 const { activeTab, resetTabs } = useWithdrawPageTabs();
 
 // Instead of refetching pool data on every block, we refetch every minute to prevent
@@ -70,7 +70,7 @@ onMounted(() => resetTabs());
         </div>
       </template>
       <ExitPoolProvider
-        v-if="isDeepPool"
+        v-if="isDeepPool || isWeightedLikePool"
         :isSingleAssetExit="activeTab === Tab.SingleToken"
         :pool="pool"
       >
